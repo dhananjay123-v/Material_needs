@@ -1,0 +1,91 @@
+<html>
+<head>
+</head>
+<style>
+    body{
+        margin: 110;
+        padding: 110;
+    }
+    h2{
+        width: 100px;
+        color:rgb(243, 85, 11);
+        border: 2px solid black;
+        border-radius: 5px green;
+    }
+  
+</style>
+<body>
+<script>
+    // Dhananjay
+        function cal()
+        {
+           let fn = document.getElementById("fnum").value;
+           let sn = document.getElementById("snum").value;
+           let sum=parseInt(fn) + parseInt(sn);
+           
+           document.getElementById("result").innerHTML=sum;
+        }
+
+      function ca()
+        {
+           let ffn = document.getElementById("fnum").value;
+           let ssn = document.getElementById("snum").value;
+          
+           let sub=parseInt(ffn) - parseInt(ssn);
+           document.getElementById("result").innerHTML=sub;
+        }
+
+        function caa()
+        {
+           let mn = document.getElementById("fnum").value;
+           let mmn = document.getElementById("snum").value;
+          
+           let mul=parseInt(mn) * parseInt(mmn);
+           document.getElementById("result").innerHTML=mul;
+        }
+
+        function aa()
+        {
+           let mn = document.getElementById("fnum").value;
+           let dn = document.getElementById("snum").value;
+          
+           let div=parseInt(mn) / parseInt(dn);
+           document.getElementById("result").innerHTML=div;
+        }
+
+        function aaa()
+        {
+           let ss = document.getElementById("fnum").value;
+           
+          
+           let sq=parseInt(ss) * parseInt(ss);
+           document.getElementById("result").innerHTML=sq;
+        }
+
+        function aaaa()
+        {
+            let num= document.getElementById("fnum").value;
+            let factt=1;
+            
+           for(let i=1;i<=num;i++){
+             factt *= i;
+           }
+           document.getElementById("result").innerHTML=factt;
+        }
+
+</script>
+</script>
+<h1>Mini Calculater in Java script</h1>
+    
+    Enter first number ::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="fnum"><br>
+    Enter second number ::<input type="text" id="snum"><br>
+    
+    <h2 id="result">Result</h2>
+    <button onclick="cal()">Calculate sum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <button onclick="ca()">Calculate sub&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <button onclick="caa()">Calculate mul&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+    <button onclick="aa()">Calculate div&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br>
+    <button onclick="aaa()">Calculate square (enter only first number)</button>
+    <button onclick="aaaa()">Calculate factorial  (enter only first number)</button>
+</body>
+</html>
